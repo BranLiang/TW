@@ -5,14 +5,14 @@ module ConferenceManager
       @talks = []
     end
 
-    def readfile(path = @path)
+    def readfile(path = @path, talks = @talks)
       File.readlines(path).each do |line|
         duration = line.match(/\d+/).to_s.to_i
         duration = 5 if duration == 0 # for lignting talks
         title = line.match(/\D+/)[0].to_s.strip
-        @talks.push({duration: duration, title: title})
+        talks.push({duration: duration, title: title})
       end
-      @talks
+      talks
     end
   end
 end
