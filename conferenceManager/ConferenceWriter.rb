@@ -5,7 +5,7 @@ module ConferenceManager
     end
 
     def writeResult(tracks = @tracks)
-      File.open("conference_schedule.txt", "w") do |f|
+      File.open("./data/conference_schedule.txt", "w") do |f|
         @tracks.each_with_index do |track, index|
           morning_time = Time.new(2016, 01, 01, 9, 0)
           afternoon_time = Time.new(2016, 01, 01, 1, 0)
