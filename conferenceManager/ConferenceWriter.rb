@@ -19,10 +19,19 @@ module ConferenceManager
             f.puts "#{afternoon_time.strftime("%H:%M")}PM" + " " + talk[:title] + " " + "#{talk[:duration]}min"
             afternoon_time += talk[:duration] * 60
           end
-          f.puts "#{afternoon_time.strftime("%H:%M")}PM" + " " + "Networking Event"
+          f.puts networking(afternoon_time)
         end
       end
     end
+
+
+    private
+      def networking time
+        time_limit = Time.new(2016, 01, 01, 4, 0)
+        normal = "#{time.strftime("%H:%M")}PM" + " " + "Networking Event"
+        edge_case = "04:00PM" + " " + "Networking Event"
+        time > time_limit ? normal : edge_case
+      end
 
   end
 end
