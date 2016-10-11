@@ -1,4 +1,4 @@
-# Conference Track Mangager
+# Conference Tracker Manager
 
 ## Usage  
 * go to the root directory of the project  
