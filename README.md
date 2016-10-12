@@ -1,5 +1,11 @@
 # Conference Tracker Manager
 
+## Approach  
+* Make each `talk` a seperate class, which includes `duration` and `title`, this makes the talks extensible and easier if we want to add more stuff and functionality on it.  
+* Make each `track` a seperate class, which includes an array of `morning_session` and an array of `afternoon_session`.  
+* First read the file and parse the content using the `Regex` expression. All talks will be stored in an array collection called `@talks`. The `Talk` is injected into the `Loader` class for the initialize purpose.  
+* Then, during the sorting
+
 ## Usage  
 * go to the root directory of the project  
 `cd thoughtworks`  
