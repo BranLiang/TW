@@ -1,4 +1,4 @@
-# Conference Tracker Manager
+# Conference Tracker Manager  
 
 ## Approach  
 * Make each `talk` a seperate class, which includes `duration` and `title`, this makes the talks extensible and easier if we want to add more stuff and functionality on it.  

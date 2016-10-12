@@ -10,8 +10,7 @@ module ConferenceManager
       File.readlines(path).each do |line|
         duration = line.match(/\d+/).to_s.to_i
         duration = 5 if duration == 0 # for lignting talks
-        title = line.match(/\D+[^lightning]/)[0].to_s.strip
-        # talks.push({duration: duration, title: title})
+        title = line.match(/\D+/)[0].to_s.strip
         @talks.push(@Talk.new(duration, title))
       end
       @talks
