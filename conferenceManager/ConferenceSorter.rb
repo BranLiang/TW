@@ -9,8 +9,8 @@ module ConferenceManager
 
     def fill_tracks
       @tracks.map do |track|
-        track.morning_session = fill_session(3)
-        track.afternoon_session = fill_session(4)
+        track.morning_session = fill_session(3) # 3 is time limit
+        track.afternoon_session = fill_session(4) # 4 is time limit
       end
     end
 
