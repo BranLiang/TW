@@ -1,8 +1,8 @@
-require_relative "conferenceManager/ConferenceLoader"
-require_relative "conferenceManager/ConferenceSorter"
-require_relative "conferenceManager/ConferenceWriter"
-require_relative "conferenceManager/talk"
-require_relative "conferenceManager/track"
+require_relative "conference_manager/conference_loader"
+require_relative "conference_manager/conference_sorter"
+require_relative "conference_manager/conference_writer"
+require_relative "conference_manager/talk"
+require_relative "conference_manager/track"
 
 module ConferenceManager
   class Process

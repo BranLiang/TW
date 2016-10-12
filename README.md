@@ -10,16 +10,13 @@
 
 ## Usage  
 * go to the root directory of the project  
-`cd conferenceManager`  
-* open the ruby interpreter  
-`irb`  
-* require the main file  
-`require "./conferenceManager.rb"`  
-* run the command  
-`ConferenceManager::Process.new.output`  
+* run the following command  
+`ruby run.rb`  
+* output result will be located in the `./data/conference_schedule`
+
 
 ## More  
 The above process will seek the file in data folder which named with `input.txt`,
 if you want to change the file input path. Use the following command  
-`ConferenceManager::Process.new("YOU FILE PATH").output`.   
+`ConferenceManager::Process.new("YOU FILE PATH").output` in the file run.rb.   
 The output file is made to be located at data folder by default.
