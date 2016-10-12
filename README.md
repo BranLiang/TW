@@ -10,7 +10,7 @@
 
 ## Usage  
 * go to the root directory of the project  
-`cd thoughtworks`  
+`cd conferenceManager`  
 * open the ruby interpreter  
 `irb`  
 * require the main file  
