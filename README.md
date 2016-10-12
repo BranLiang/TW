@@ -6,7 +6,7 @@
 * First read the file and parse the content using the `Regex` expression. All talks will be stored in an array collection called `@talks`. The `Talk` is injected into the `Loader` class for the initialize purpose.  
 * Then, during the sorting period. Each talk will try to be inserted to the session. If the session is over the time limit(morning at most 3 hours, afternoon_session at most 4 hours), the last inserted talk will be popped out. At the same time, the talks collection will be sliced if the talk successfully inserted into the session.  
 * After got the tracks. The result will be outputted in the `Writer` class. And for the networking, if the afternoon_session ends early than expected, then networking start at 04:00PM, otherwise the networking will start just after the end of the afternoon_session.  
-* All procedure will be deployed in the `Process` class.
+* All procedure will be deployed in the `Process` class.  
 
 ## Usage  
 * go to the root directory of the project  
